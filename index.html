@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,195 +7,89 @@
     <meta name="description" content="Takoma Park Singers is a community chorus in Takoma Park, Maryland. We perform classical masterworks and contemporary pieces. Join us for our Winter Holiday Concert and Spring Concert. Directed by Carole Whittam since 1981.">
     <meta name="keywords" content="Takoma Park Singers, community chorus, choir, Takoma Park Maryland, Silver Spring, choral music, singing, concerts, Carole Whittam, Washington DC area chorus">
     <meta name="author" content="Takoma Park Singers">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Takoma Park Singers - Community Chorus">
     <meta property="og:description" content="A community chorus in Takoma Park, Maryland performing classical masterworks and contemporary pieces. Join us at our next concert!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://takomaparksingers.github.io/">
     <meta property="og:image" content="https://takomaparksingers.github.io/holiday-concert.jpg">
-    
-    <!-- Location-specific meta tags -->
     <meta name="geo.region" content="US-MD">
     <meta name="geo.placename" content="Takoma Park, Maryland">
     <meta name="geo.position" content="38.9776;-77.0024">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; }
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+            color: white; padding: 3rem 2rem; text-align: center;
+            position: relative; overflow: hidden;
         }
-        
         header::before {
             content: "♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫";
-            position: absolute;
-            top: 20%;
-            left: -10%;
-            font-size: 3rem;
-            opacity: 0.15;
-            letter-spacing: 2rem;
-            animation: float 20s infinite linear;
+            position: absolute; top: 20%; left: -10%; font-size: 3rem;
+            opacity: 0.15; letter-spacing: 2rem; animation: float 20s infinite linear;
         }
-        
         header::after {
             content: "♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪";
-            position: absolute;
-            bottom: 20%;
-            right: -10%;
-            font-size: 2.5rem;
-            opacity: 0.15;
-            letter-spacing: 1.8rem;
-            animation: float 25s infinite linear reverse;
+            position: absolute; bottom: 20%; right: -10%; font-size: 2.5rem;
+            opacity: 0.15; letter-spacing: 1.8rem; animation: float 25s infinite linear reverse;
         }
-        
-        @keyframes float {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(50px);
-            }
-        }
-        
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            font-weight: normal;
-        }
-        
-        header p {
-            font-size: 1.3rem;
-            opacity: 0.95;
-        }
-        
+        @keyframes float { from { transform: translateX(0); } to { transform: translateX(50px); } }
+        header h1 { font-size: 3rem; margin-bottom: 0.5rem; font-weight: normal; }
+        header p { font-size: 1.3rem; opacity: 0.95; }
         nav {
-            background: #fff;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            background: #fff; padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;
         }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        
-        nav a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #764ba2;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-        }
-        
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; }
+        nav a { color: #667eea; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+        nav a:hover { color: #764ba2; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+        section { margin-bottom: 4rem; }
         h2 {
-            color: #667eea;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid #764ba2;
-            padding-bottom: 0.5rem;
+            color: #667eea; font-size: 2.5rem; margin-bottom: 1.5rem;
+            border-bottom: 3px solid #764ba2; padding-bottom: 0.5rem;
         }
-        
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
         .card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 10px;
+            background: #f8f9fa; padding: 2rem; border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        
-        .card h3 {
-            color: #764ba2;
-            margin-bottom: 1rem;
-        }
-        
+        .card h3 { color: #764ba2; margin-bottom: 1rem; }
         .rehearsal-info {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 2rem 0;
+            color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0;
         }
-        
-        .rehearsal-info h3 {
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-        }
-        
+        .rehearsal-info h3 { margin-bottom: 1rem; font-size: 1.8rem; }
         .cta-button {
-            display: inline-block;
-            background: #764ba2;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block; background: #764ba2; color: white;
+            padding: 1rem 2rem; text-decoration: none; border-radius: 50px;
+            font-weight: bold; margin-top: 1rem; transition: transform 0.3s, box-shadow 0.3s;
         }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(118,75,162,0.4); }
+        footer { background: #2d3748; color: white; text-align: center; padding: 2rem; }
+
+        /* Save the Date SVG container */
+        .save-the-date-container {
+            display: flex; justify-content: center; margin-bottom: 2rem;
         }
-        
-        footer {
-            background: #2d3748;
-            color: white;
-            text-align: center;
-            padding: 2rem;
+        .save-the-date-container svg {
+            width: 100%; max-width: 560px; height: auto;
+            border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
-        
+        /* Petal animation */
+        @keyframes petalFall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(60px) rotate(180deg); opacity: 0; }
+        }
+        .petal { animation: petalFall 3s ease-in infinite; }
+        .petal:nth-child(2) { animation-delay: 0.6s; }
+        .petal:nth-child(3) { animation-delay: 1.2s; }
+        .petal:nth-child(4) { animation-delay: 1.8s; }
+        .petal:nth-child(5) { animation-delay: 2.4s; }
+
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
+            header h1 { font-size: 2rem; }
+            nav ul { flex-direction: column; align-items: center; gap: 1rem; }
         }
     </style>
 </head>
@@ -203,12 +99,12 @@
         <p>Connecting With Our Community Through Song</p>
     </header>
     
-            <nav>
+    <nav>
         <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#performances">Upcoming Performances</a></li>
             <li><a href="#past">Past Performances</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
     
@@ -222,16 +118,124 @@
         
         <section id="performances">
             <h2>Upcoming Performances</h2>
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="holiday-concert.jpg" alt="Takoma Park Singers Holiday Concert" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+
+            <!-- Save the Date Clip Art SVG -->
+            <div class="save-the-date-container">
+                <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fdf6f0"/>
+                            <stop offset="100%" style="stop-color:#fce4ec"/>
+                        </linearGradient>
+                        <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#764ba2"/>
+                            <stop offset="50%" style="stop-color:#9b59b6"/>
+                            <stop offset="100%" style="stop-color:#764ba2"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Background -->
+                    <rect width="560" height="300" rx="14" fill="url(#bgGrad)" stroke="#e0c8d8" stroke-width="2"/>
+
+                    <!-- Decorative border -->
+                    <rect x="10" y="10" width="540" height="280" rx="10" fill="none" stroke="#d4a0c0" stroke-width="1.5" stroke-dasharray="8,4"/>
+
+                    <!-- Cherry blossom branches (left) -->
+                    <g opacity="0.85">
+                        <!-- Branch -->
+                        <path d="M 20 260 Q 60 200 90 150 Q 110 110 140 80" fill="none" stroke="#8B5E3C" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 90 150 Q 120 160 150 170" fill="none" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 110 110 Q 130 100 155 105" fill="none" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Blossoms -->
+                        <!-- Flower 1 -->
+                        <g transform="translate(140, 75)">
+                            <circle cx="0" cy="-6" r="4" fill="#f48fb1"/><circle cx="5.7" cy="-1.9" r="4" fill="#f06292"/>
+                            <circle cx="3.5" cy="4.9" r="4" fill="#ec407a"/><circle cx="-3.5" cy="4.9" r="4" fill="#f48fb1"/>
+                            <circle cx="-5.7" cy="-1.9" r="4" fill="#f06292"/><circle cx="0" cy="0" r="2.5" fill="#ffcc80"/>
+                        </g>
+                        <!-- Flower 2 -->
+                        <g transform="translate(155, 105)">
+                            <circle cx="0" cy="-5" r="3.5" fill="#f06292"/><circle cx="4.8" cy="-1.5" r="3.5" fill="#ec407a"/>
+                            <circle cx="3" cy="4" r="3.5" fill="#f48fb1"/><circle cx="-3" cy="4" r="3.5" fill="#f06292"/>
+                            <circle cx="-4.8" cy="-1.5" r="3.5" fill="#ec407a"/><circle cx="0" cy="0" r="2" fill="#ffcc80"/>
+                        </g>
+                        <!-- Flower 3 -->
+                        <g transform="translate(150, 168)">
+                            <circle cx="0" cy="-5" r="3.5" fill="#ec407a"/><circle cx="4.8" cy="-1.5" r="3.5" fill="#f48fb1"/>
+                            <circle cx="3" cy="4" r="3.5" fill="#f06292"/><circle cx="-3" cy="4" r="3.5" fill="#ec407a"/>
+                            <circle cx="-4.8" cy="-1.5" r="3.5" fill="#f48fb1"/><circle cx="0" cy="0" r="2" fill="#ffcc80"/>
+                        </g>
+                        <!-- Buds -->
+                        <ellipse cx="100" cy="130" rx="3" ry="5" fill="#f48fb1" transform="rotate(-15,100,130)"/>
+                        <ellipse cx="125" cy="95" rx="3" ry="5" fill="#ec407a" transform="rotate(10,125,95)"/>
+                    </g>
+
+                    <!-- Cherry blossom branches (right) -->
+                    <g opacity="0.85">
+                        <path d="M 540 260 Q 500 200 470 150 Q 450 110 420 80" fill="none" stroke="#8B5E3C" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 470 150 Q 440 160 410 170" fill="none" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M 450 110 Q 430 100 405 105" fill="none" stroke="#8B5E3C" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Blossoms -->
+                        <g transform="translate(420, 75)">
+                            <circle cx="0" cy="-6" r="4" fill="#f06292"/><circle cx="5.7" cy="-1.9" r="4" fill="#f48fb1"/>
+                            <circle cx="3.5" cy="4.9" r="4" fill="#ec407a"/><circle cx="-3.5" cy="4.9" r="4" fill="#f06292"/>
+                            <circle cx="-5.7" cy="-1.9" r="4" fill="#f48fb1"/><circle cx="0" cy="0" r="2.5" fill="#ffcc80"/>
+                        </g>
+                        <g transform="translate(405, 105)">
+                            <circle cx="0" cy="-5" r="3.5" fill="#f48fb1"/><circle cx="4.8" cy="-1.5" r="3.5" fill="#f06292"/>
+                            <circle cx="3" cy="4" r="3.5" fill="#ec407a"/><circle cx="-3" cy="4" r="3.5" fill="#f48fb1"/>
+                            <circle cx="-4.8" cy="-1.5" r="3.5" fill="#f06292"/><circle cx="0" cy="0" r="2" fill="#ffcc80"/>
+                        </g>
+                        <g transform="translate(410, 168)">
+                            <circle cx="0" cy="-5" r="3.5" fill="#ec407a"/><circle cx="4.8" cy="-1.5" r="3.5" fill="#f48fb1"/>
+                            <circle cx="3" cy="4" r="3.5" fill="#f06292"/><circle cx="-3" cy="4" r="3.5" fill="#ec407a"/>
+                            <circle cx="-4.8" cy="-1.5" r="3.5" fill="#f48fb1"/><circle cx="0" cy="0" r="2" fill="#ffcc80"/>
+                        </g>
+                        <ellipse cx="460" cy="130" rx="3" ry="5" fill="#f48fb1" transform="rotate(15,460,130)"/>
+                        <ellipse cx="435" cy="95" rx="3" ry="5" fill="#ec407a" transform="rotate(-10,435,95)"/>
+                    </g>
+
+                    <!-- Falling petals (animated) -->
+                    <g class="petal"><ellipse cx="200" cy="40" rx="4" ry="6" fill="#f48fb1" opacity="0.7" transform="rotate(20,200,40)"/></g>
+                    <g class="petal"><ellipse cx="350" cy="30" rx="3" ry="5" fill="#ec407a" opacity="0.6" transform="rotate(-15,350,30)"/></g>
+                    <g class="petal"><ellipse cx="270" cy="50" rx="4" ry="6" fill="#f06292" opacity="0.7" transform="rotate(35,270,50)"/></g>
+                    <g class="petal"><ellipse cx="180" cy="60" rx="3" ry="5" fill="#f48fb1" opacity="0.5" transform="rotate(-25,180,60)"/></g>
+                    <g class="petal"><ellipse cx="380" cy="55" rx="4" ry="5" fill="#ec407a" opacity="0.6" transform="rotate(10,380,55)"/></g>
+
+                    <!-- Purple ribbon banner -->
+                    <rect x="60" y="100" width="440" height="48" rx="6" fill="url(#bannerGrad)"/>
+                    <!-- Ribbon curls -->
+                    <path d="M 60 100 Q 40 124 60 148" fill="#6a3d9a" stroke="none"/>
+                    <path d="M 500 100 Q 520 124 500 148" fill="#6a3d9a" stroke="none"/>
+
+                    <!-- "SAVE THE DATE" text -->
+                    <text x="280" y="133" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="white" letter-spacing="4">SAVE THE DATE</text>
+
+                    <!-- Music note decorations around text -->
+                    <text x="95" y="138" font-size="18" fill="#ffcc80" opacity="0.9">♪</text>
+                    <text x="455" y="138" font-size="18" fill="#ffcc80" opacity="0.9">♪</text>
+
+                    <!-- Date and details area -->
+                    <text x="280" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#764ba2" font-weight="bold">Spring Concert 2025</text>
+
+                    <!-- Decorative divider line -->
+                    <line x1="180" y1="198" x2="380" y2="198" stroke="#d4a0c0" stroke-width="1.5"/>
+                    <circle cx="280" cy="198" r="3" fill="#764ba2"/>
+
+                    <!-- Details -->
+                    <text x="280" y="225" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#555">Friday, May 12  •  7:30 PM</text>
+                    <text x="280" y="243" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#777">Silver Spring United Methodist Church</text>
+
+                    <!-- Divider -->
+                    <line x1="200" y1="255" x2="360" y2="255" stroke="#d4a0c0" stroke-width="0.8"/>
+
+                    <!-- Free and open text -->
+                    <text x="280" y="275" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#555"><tspan font-weight="bold">Free and open to the public.</tspan></text>
+                    <text x="280" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#555">Donations support <tspan fill="#764ba2" font-style="italic">Shepherd's Table</tspan></text>
+                </svg>
             </div>
-            <div class="rehearsal-info">
-                <h3>2025 Winter Concert</h3>
-                <p><strong>Date:</strong> Friday, December 12, 2025</p>
-                <p><strong>Time:</strong> 7:30 PM</p>
-                <p><strong>Location:</strong> Silver Spring United Methodist Church</p>
-                <p style="margin-top: 1.5rem;">This event is <strong>free and open to the public</strong>. Donations will be collected to support <a href="https://shepherdstable.org/" target="_blank" style="color: white; text-decoration: underline;">Shepherd's Table</a>.</p>
-            </div>
+
+
         </section>
         
         <section id="past">
